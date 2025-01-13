@@ -12,6 +12,7 @@ public class Main {
         exerc5();
         exerc6();
         exerc7();
+        exerc8();
 
     }
 
@@ -85,8 +86,13 @@ public class Main {
     }
 
     public static void exerc7() {
-        System.out.println(Moeda.DOLAR.converterPara(100));
-        System.out.println(Moeda.EURO.converterPara(100));
+        System.out.println("$ " + Moeda.DOLAR.converterPara(100));
+        System.out.println("€ " + Moeda.EURO.converterPara(100));
+    }
+
+    public static void exerc8() {
+        System.out.println(CodigoErro.NOT_FOUND.getCodigo()); // 404
+        System.out.println(CodigoErro.BAD_REQUEST.getDescricao()); // Requisição inválida
     }
 }
 
