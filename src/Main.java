@@ -10,6 +10,7 @@ public class Main {
 //        exerc3();
 //        exerc4();
         exerc5();
+        exerc6();
 
     }
 
@@ -75,6 +76,11 @@ public class Main {
         return emails.stream()
                 .map(email -> email.trim().toLowerCase())
                 .toList();
+    }
+
+    public static void exerc6() {
+        System.out.println("Fevereiro: " + Mes.FEVEREIRO.getNumeroDeDias() + " dias"); //28 dias
+        System.out.println("Julho: " + Mes.JULHO.getNumeroDeDias() + " dias"); //31 dias
     }
 }
 
