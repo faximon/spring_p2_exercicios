@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args) {
         exerc1();
         exerc2();
+        exerc3();
 
     }
 
@@ -37,4 +38,19 @@ public class Main {
     public static Optional<Integer> processaNumero(Optional<Integer> numero) {
         return numero.filter(n -> n > 0).map(n -> n * n);
     }
+
+    public static void exerc3() {
+        System.out.println(obterPrimeiroEUltimoNome("  João Carlos Silva   ")); // Saída: "João Silva"
+        System.out.println(obterPrimeiroEUltimoNome("Maria   ")); // Saída: "Maria"
+
+    }
+
+    public static String obterPrimeiroEUltimoNome(String nomeCompleto) {
+        String[] nomes = nomeCompleto.trim().split("\\s+");
+        if (nomes.length == 1) {
+            return nomes[0];
+        }
+        return nomes[0] + " " + nomes[nomes.length -1];
+    }
 }
+
