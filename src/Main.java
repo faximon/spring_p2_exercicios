@@ -11,6 +11,7 @@ public class Main {
 //        exerc4();
         exerc5();
         exerc6();
+        exerc7();
 
     }
 
@@ -81,6 +82,11 @@ public class Main {
     public static void exerc6() {
         System.out.println("Fevereiro: " + Mes.FEVEREIRO.getNumeroDeDias() + " dias"); //28 dias
         System.out.println("Julho: " + Mes.JULHO.getNumeroDeDias() + " dias"); //31 dias
+    }
+
+    public static void exerc7() {
+        System.out.println(Moeda.DOLAR.converterPara(100));
+        System.out.println(Moeda.EURO.converterPara(100));
     }
 }
 
