@@ -8,6 +8,7 @@ public class Main {
         exerc1();
         exerc2();
         exerc3();
+        exerc4();
 
     }
 
@@ -51,6 +52,16 @@ public class Main {
             return nomes[0];
         }
         return nomes[0] + " " + nomes[nomes.length -1];
+    }
+
+    public static void exerc4() {
+        System.out.println(ehPalindromo("subi no onibus"));
+        System.out.println(ehPalindromo("Java"));
+    }
+
+    public static boolean ehPalindromo(String palavra) {
+        String semEspacos = palavra.replace(" ", "").toLowerCase();
+        return new StringBuilder(semEspacos).reverse().toString().equalsIgnoreCase(semEspacos);
     }
 }
 
